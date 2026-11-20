@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Repositorio central de aplicaciones creadas por estudiantes en la asignatura de Programación Orientada a Objetos.">
+  <title>Hub académico · POO 2026-2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Hub académico, inicio"><span class="brand-mark">{ }</span><span>Hub académico<span class="brand-dot">.</span></span></a>
+      <nav aria-label="Navegación principal"><a href="#catalogo">Explorar repositorios <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero shell" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Archivo de proyectos · POO 2026-2</p>
+        <h1 id="page-title">Ideas que se<br><em>convierten en código.</em></h1>
+        <p class="hero-description">Repositorio central de aplicaciones creadas por estudiantes en la asignatura de Programación Orientada a Objetos.</p>
+        <a class="hero-action" href="#catalogo">Ver los proyectos <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-aside" aria-label="Datos del catálogo">
+        <span class="aside-label">COLECCIÓN / 2026-2</span>
+        <span class="aside-count" id="heroCount">13</span>
+        <span class="aside-caption">repositorios de estudiantes</span>
+        <div class="aside-code" aria-hidden="true"><span>class</span> ProyectoEstudiantil:<br>&nbsp;&nbsp;def crear(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;return ideas + código</div>
+      </div>
+    </section>
+    <section class="catalog-section" id="catalogo" aria-labelledby="catalog-title">
+      <div class="shell">
+        <div class="section-heading"><div><p class="eyebrow">CATÁLOGO / PARCIAL III</p><h2 id="catalog-title">Explora el trabajo de la clase</h2></div><p id="resultCount" class="result-count" aria-live="polite"></p></div>
+        <div class="catalog-tools"><label class="search-box"><span aria-hidden="true">⌕</span><span class="visually-hidden">Buscar por proyecto o estudiante</span><input id="searchInput" type="search" placeholder="Buscar proyecto o estudiante…" autocomplete="off"></label><div id="filterButtons" class="filters" role="group" aria-label="Filtrar por tipo de proyecto"></div></div>
+        <div id="projectsGrid" class="projects-grid" aria-live="polite"><p class="status-message">Cargando repositorios…</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><span>Hub académico · Programación Orientada a Objetos · 2026-2</span><a href="#page-title">Volver arriba ↑</a></div></footer>
+</body>
+</html>

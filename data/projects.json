@@ -1,0 +1,111 @@
+{
+  "course": "Programación Orientada a Objetos",
+  "period": "2026-2",
+  "source": "docs/repositorios_github_parcial_III_POO_3E.md",
+  "categories": [
+    {
+      "id": "imagenes",
+      "name": "Imagen y diseño"
+    },
+    {
+      "id": "juegos",
+      "name": "Juegos"
+    },
+    {
+      "id": "cuestionarios",
+      "name": "Cuestionarios"
+    },
+    {
+      "id": "gestion",
+      "name": "Gestión"
+    },
+    {
+      "id": "musica",
+      "name": "Música"
+    },
+    {
+      "id": "otros",
+      "name": "Otros proyectos"
+    }
+  ],
+  "projects": [
+    {
+      "name": "editor-de-imagenes",
+      "student": "Alian Acendra Torres",
+      "githubUrl": "https://github.com/carlos2301200355230-ui/editor-de-imagenes",
+      "category": "imagenes"
+    },
+    {
+      "name": "PixelLab",
+      "student": "Anderson Areiza Peñaloza",
+      "githubUrl": "https://github.com/areizaanderson1779-coder/PixelLab",
+      "category": "imagenes"
+    },
+    {
+      "name": "inventario_trading",
+      "student": "Ashelley Pacheco Caicedo",
+      "githubUrl": "https://github.com/ashlly21/inventario_trading",
+      "category": "gestion"
+    },
+    {
+      "name": "editor-imagenes-poo",
+      "student": "Damián Feria Carrascal",
+      "githubUrl": "https://github.com/damiferia/editor-imagenes-poo",
+      "category": "imagenes"
+    },
+    {
+      "name": "GuardiansOfTheAncientKingdom",
+      "student": "Darwin Pertuz Pacheco",
+      "githubUrl": "https://github.com/pertuzpachecodarwin-ops/GuardiansOfTheAncientKingdom",
+      "category": "juegos"
+    },
+    {
+      "name": "Quiz-Master",
+      "student": "David Sanjuan Cifuentes",
+      "githubUrl": "https://github.com/xLzDoritos/Quiz-Master",
+      "category": "cuestionarios"
+    },
+    {
+      "name": "PARCIAL-INTEGRADOR",
+      "student": "Jean Navarro Ferreira",
+      "githubUrl": "https://github.com/navarrojean6344-collab/PARCIAL-INTEGRADOR",
+      "category": "otros"
+    },
+    {
+      "name": "quiz-poo",
+      "student": "Jesús Torres Cervantes",
+      "githubUrl": "https://github.com/JDTC7/quiz-poo",
+      "category": "cuestionarios"
+    },
+    {
+      "name": "mi_proyecto",
+      "student": "Jhon Sánchez Guerrero",
+      "githubUrl": "https://github.com/ingjhon-sanchez/mi_proyecto",
+      "category": "otros"
+    },
+    {
+      "name": "Musica",
+      "student": "Jonny Cueto del Valle",
+      "githubUrl": "https://github.com/EvoDrK/Musica",
+      "category": "musica"
+    },
+    {
+      "name": "proyecto_ajedrez",
+      "student": "Kelmin Miranda Hurtado",
+      "githubUrl": "https://github.com/KlmnEly/proyecto_ajedrez",
+      "category": "juegos"
+    },
+    {
+      "name": "juego-preguntas-poo",
+      "student": "Samuel Gutiérrez Mantilla",
+      "githubUrl": "https://github.com/samyguti089-art/juego-preguntas-poo",
+      "category": "cuestionarios"
+    },
+    {
+      "name": "ArenaDeLeyendas",
+      "student": "Vicente Ortega Jiménez",
+      "githubUrl": "https://github.com/darkred390-design/ArenaDeLeyendas",
+      "category": "juegos"
+    }
+  ]
+}

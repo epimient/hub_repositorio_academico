@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detalle de los proyectos de Programación Orientada a Objetos 2026-2.">
+  <title>Proyecto · Hub académico POO 2026-2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/detail.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Hub académico, inicio"><span class="brand-mark">{ }</span><span>Hub académico<span class="brand-dot">.</span></span></a>
+      <nav aria-label="Navegación principal"><a href="index.html#catalogo">← Volver al catálogo</a></nav>
+    </div>
+  </header>
+  <main class="detail-main shell">
+    <a class="back-link" href="index.html#catalogo">← Todos los proyectos</a>
+    <div id="detailStatus" class="detail-status" role="status">Cargando proyecto…</div>
+    <section id="detailContent" hidden>
+      <div class="detail-header">
+        <div>
+          <p id="detailCategory" class="eyebrow"></p>
+          <h1 id="detailName"></h1>
+          <p id="detailStudent" class="detail-student"></p>
+          <p id="detailDescription" class="detail-description"></p>
+        </div>
+        <a id="githubButton" class="hero-action detail-github" target="_blank" rel="noopener noreferrer">Abrir en GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="detail-body">
+        <section class="readme-section" aria-labelledby="readmeHeading">
+          <div class="readme-heading"><div><p class="eyebrow">DOCUMENTACIÓN DEL ESTUDIANTE</p><h2 id="readmeHeading">README del proyecto</h2></div><span class="readme-source">Fuente: GitHub</span></div>
+          <div id="readmeContent" class="readme-content" aria-live="polite">Cargando README…</div>
+        </section>
+        <section class="technical-section" aria-labelledby="technicalHeading">
+          <div class="readme-heading"><div><p class="eyebrow">DATOS DEL REPOSITORIO</p><h2 id="technicalHeading">Ficha técnica</h2></div><span class="readme-source">Fuente: GitHub</span></div>
+          <p id="technicalStatus" class="technical-status" role="status">Consultando información técnica…</p>
+          <div class="technical-layout">
+            <div class="technical-left">
+              <dl id="technicalGrid" class="technical-grid" hidden></dl>
+              <div id="topicsBlock" class="topics-block" hidden><h3>Temas</h3><div id="topicsList" class="topics-list"></div></div>
+            </div>
+            <div class="languages-block"><h3>Lenguajes del proyecto</h3><p id="languagesStatus" class="technical-status" role="status">Consultando lenguajes…</p><div id="languagesList" class="languages-list"></div></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><span>Hub académico · Programación Orientada a Objetos · 2026-2</span><a href="index.html#catalogo">Volver al catálogo ↑</a></div></footer>
+</body>
+</html>
