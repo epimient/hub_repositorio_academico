@@ -48,6 +48,18 @@
       "category": "gestion"
     },
     {
+      "name": "editor_imagenes",
+      "student": "Carlos Ferrer",
+      "githubUrl": "https://github.com/carlosferrer4734-spec/editor_imagenes",
+      "category": "imagenes"
+    },
+    {
+      "name": "reproductor-musica",
+      "student": "Cristian Sarmiento",
+      "githubUrl": "https://github.com/5t6nfjn9pn-cmyk/reproductor-musica",
+      "category": "musica"
+    },
+    {
       "name": "editor-imagenes-poo",
       "student": "Damián Feria Carrascal",
       "githubUrl": "https://github.com/damiferia/editor-imagenes-poo",
@@ -102,10 +114,22 @@
       "category": "cuestionarios"
     },
     {
+      "name": "PARCIAL-3-POO",
+      "student": "Sharyck Reina",
+      "githubUrl": "https://github.com/Reinasharick/PARCIAL-3-POO",
+      "category": "otros"
+    },
+    {
       "name": "ArenaDeLeyendas",
       "student": "Vicente Ortega Jiménez",
       "githubUrl": "https://github.com/darkred390-design/ArenaDeLeyendas",
       "category": "juegos"
+    },
+    {
+      "name": "PixelLab",
+      "student": "Yeynner Flórez",
+      "githubUrl": "https://github.com/areizaanderson1779-coder/PixelLab",
+      "category": "imagenes"
     }
   ]
 }

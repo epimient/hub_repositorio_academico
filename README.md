@@ -2,7 +2,7 @@
 
 Repositorio central de aplicaciones creadas por estudiantes en la asignatura de Programación Orientada a Objetos.
 
-El catálogo muestra los 13 repositorios del [listado del Parcial III](docs/repositorios_github_parcial_III_POO_3E.md). Cada tarjeta abre una ficha dentro del hub con descripción, cuenta de GitHub, lenguaje principal, distribución de lenguajes, licencia, rama principal, fechas, tamaño, temas, sitio del proyecto y el README que escribió el estudiante, según los datos públicos disponibles. La ficha incluye un botón para abrir GitHub. Se puede buscar por proyecto o estudiante y filtrar por tipo de aplicación. Las categorías se infieren del nombre de cada repositorio; cuando este no permite identificar el tipo, se usa «Otros proyectos».
+El catálogo muestra los 17 repositorios del [listado del Parcial III](docs/repositorios_github_parcial_III_POO_3E.md). Cada tarjeta abre una ficha dentro del hub con descripción, cuenta de GitHub, lenguaje principal, distribución de lenguajes, licencia, rama principal, fechas, tamaño, temas, sitio del proyecto y el README que escribió el estudiante, según los datos públicos disponibles. La ficha incluye un botón para abrir GitHub. Se puede buscar por proyecto o estudiante y filtrar por tipo de aplicación. Las categorías se infieren del nombre de cada repositorio; cuando este no permite identificar el tipo, se usa «Otros proyectos».
 
 ## Ejecutar localmente
 

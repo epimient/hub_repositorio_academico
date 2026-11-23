@@ -5,7 +5,7 @@ const search = document.getElementById('searchInput');
 
 function projectCard(project) {
   const category = state.categories.find(item => item.id === project.category);
-  const detailUrl = `app.html?repo=${encodeURIComponent(new URL(project.githubUrl).pathname.slice(1))}`;
+  const detailUrl = `app.html?repo=${encodeURIComponent(new URL(project.githubUrl).pathname.slice(1))}&student=${encodeURIComponent(project.student)}`;
   const cardLink = document.createElement('a');
   cardLink.href = detailUrl;
   cardLink.className = 'project-card-link';

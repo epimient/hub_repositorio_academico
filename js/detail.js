@@ -26,11 +26,27 @@ function repositoryParts(url) {
   return parts;
 }
 
-function setProject(project, categories) {
+function setProject(project, categories, allProjects = []) {
   const category = categories.find(item => item.id === project.category);
   document.getElementById('detailCategory').textContent = `${category?.name || 'Otros proyectos'} / POO 2026-2`;
   document.getElementById('detailName').textContent = project.name;
-  document.getElementById('detailStudent').textContent = `Proyecto de ${project.student}`;
+
+  const coAuthors = allProjects
+    .filter(item => {
+      try {
+        return new URL(item.githubUrl).pathname.slice(1).toLowerCase() === new URL(project.githubUrl).pathname.slice(1).toLowerCase();
+      } catch {
+        return false;
+      }
+    })
+    .map(item => item.student);
+
+  if (coAuthors.length > 1) {
+    document.getElementById('detailStudent').textContent = `Proyecto de ${coAuthors.join(' y ')}`;
+  } else {
+    document.getElementById('detailStudent').textContent = `Proyecto de ${project.student}`;
+  }
+
   document.getElementById('detailDescription').textContent = 'Consulta el README para conocer la explicación del proyecto.';
   document.getElementById('githubButton').href = project.githubUrl;
   document.title = `${project.name} · Hub académico POO 2026-2`;
@@ -237,6 +253,7 @@ async function loadReadme(project) {
 
 async function initDetail() {
   const selected = new URLSearchParams(location.search).get('repo');
+  const selectedStudent = new URLSearchParams(location.search).get('student');
   if (!selected) {
     statusElement.textContent = 'No se indicó un proyecto. Vuelve al catálogo y selecciona uno.';
     return;
@@ -245,12 +262,31 @@ async function initDetail() {
     const response = await fetch('data/projects.json');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const catalog = await response.json();
-    const project = catalog.projects.find(item => new URL(item.githubUrl).pathname.slice(1).toLowerCase() === selected.toLowerCase());
+    let project = null;
+    if (selectedStudent) {
+      project = catalog.projects.find(item => {
+        try {
+          return new URL(item.githubUrl).pathname.slice(1).toLowerCase() === selected.toLowerCase() &&
+                 item.student.toLowerCase() === selectedStudent.toLowerCase();
+        } catch {
+          return false;
+        }
+      });
+    }
+    if (!project) {
+      project = catalog.projects.find(item => {
+        try {
+          return new URL(item.githubUrl).pathname.slice(1).toLowerCase() === selected.toLowerCase();
+        } catch {
+          return false;
+        }
+      });
+    }
     if (!project) {
       statusElement.textContent = 'Este proyecto no está en el catálogo. Vuelve y selecciona uno de la lista.';
       return;
     }
-    setProject(project, catalog.categories);
+    setProject(project, catalog.categories, catalog.projects);
     await Promise.all([loadGitHubInfo(project), loadLanguages(project), loadReadme(project)]);
   } catch (error) {
     console.error('No se pudo abrir el proyecto:', error);

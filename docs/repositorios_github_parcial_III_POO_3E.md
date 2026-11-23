@@ -5,6 +5,8 @@
 | Alian Acendra Torres | https://github.com/carlos2301200355230-ui/editor-de-imagenes |
 | Anderson Areiza Peñaloza | https://github.com/areizaanderson1779-coder/PixelLab |
 | Ashelley Pacheco Caicedo | https://github.com/ashlly21/inventario_trading |
+| Carlos Ferrer | https://github.com/carlosferrer4734-spec/editor_imagenes |
+| Cristian Sarmiento | https://github.com/5t6nfjn9pn-cmyk/reproductor-musica |
 | Damián Feria Carrascal | https://github.com/damiferia/editor-imagenes-poo |
 | Darwin Pertuz Pacheco | https://github.com/pertuzpachecodarwin-ops/GuardiansOfTheAncientKingdom |
 | David Sanjuan Cifuentes | https://github.com/xLzDoritos/Quiz-Master |
@@ -14,4 +16,6 @@
 | Jonny Cueto del Valle | https://github.com/EvoDrK/Musica |
 | Kelmin Miranda Hurtado | https://github.com/KlmnEly/proyecto_ajedrez |
 | Samuel Gutiérrez Mantilla | https://github.com/samyguti089-art/juego-preguntas-poo |
+| Sharyck Reina | https://github.com/Reinasharick/PARCIAL-3-POO |
 | Vicente Ortega Jiménez | https://github.com/darkred390-design/ArenaDeLeyendas |
+| Yeynner Flórez | https://github.com/areizaanderson1779-coder/PixelLab |
